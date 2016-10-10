@@ -1,0 +1,93 @@
+/* Core */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family:"Josefin Sans";
+color : #004d66;
+}
+
+a{
+text-decoration:none;
+}
+
+.header {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  top: 0;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  vertical-align:middle;
+  text-align:center;
+  background-color:#004d66;
+}
+
+#placeholder  {
+  width:125px;
+  height:45px;
+}
+
+#logo {
+  width:40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+nav ul {
+}
+
+nav ul li{
+display:inline-block;
+width:100px;
+}
+
+nav ul li a  {
+font-size:18px;
+display:block;
+color : white;
+}
+
+.nav {
+  justify-content: space-between;
+}
+
+.container {
+width:85%;
+margin: 0 auto;
+}
+
+.flex-r {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-c {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.main {
+  margin-top: 150px;
+}
+
+.yaya {
+  width:75%
+}
