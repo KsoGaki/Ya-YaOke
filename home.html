@@ -9,24 +9,78 @@
   <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-  <div class="header">
-    <div class="container flex-r nav">
-      <img id="placeholder" src="pics/logo_yaya.png" alt="">
-      <nav>
-        <ul class="flex-r">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">PLAY</a></li>
-          <li><a href="#">VIDEOS</a></li>
-          <li><a href=""><img id="logo" src="pics/icone_guest.png" alt=""></a></li>
-        </ul>
-      </nav>
+    <div class="header">
+      <div class="container flex-r nav">
+        <img id="placeholder" src="pics/logo_nav.png" alt="">
+        <nav>
+          <ul class="flex-r">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="#">PLAY</a></li>
+            <li><a href="#">VIDEOS</a></li>
+            <li>
+              <div class="dropdown">
+                <img onclick="myFunction()" class="dropbtn" id="logo" src="pics/icone_guest.png" alt="">
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Sign In</a>
+                  <a href="#">Sign Up</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        </div>
+      </div>
+    <div class="flex-c main">
+      <div class="yaya shadow">
+          <div class="container">
+            <img src="pics/logo_yaya.png" alt="">
+            <span><em><strong>N</strong>E PAS SAVOIR CHANTER EST UN ART</em></span>
+        </div>
+      </div>
+      <div class="shadow">
+        <div class="container">
+          <h3><strong>S</strong>TART THE GAME</h3>
+          <div class="flex-c mosa">
+            <div class="flex-r childmosa">
+              <img src="http://placehold.it/400x325">
+              <img src="http://placehold.it/400x325">
+            </div>
+            <div class="flex-r childmosa">
+              <img src="http://placehold.it/400x325">
+              <img src="http://placehold.it/400x325">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="flex-c main">
-    <div class="container flex-c">
-      <img class="yaya" src="pics/logo_yaya.png" alt="">
-    </div>
+  </body>
+  <script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
 
-</body>
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
 </html>
+<!--  <h3><strong>B</strong>EST VIDEOS TODAY</h3>
+  <div class="flex-r">
+    <div class="mainvid">
+      <img src="pics/logo_youtube.jpg" alt="">
+    </div>
+    <div class="flex-c othervid">
+      <img src="pics/logo_youtube.jpg" alt="">
+      <img src="pics/logo_youtube.jpg" alt="">
+      <img src="pics/logo_youtube.jpg" alt="">
+    </div>
+  </div> -->
