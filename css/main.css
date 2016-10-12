@@ -1,0 +1,179 @@
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family:"Josefin Sans";
+color : #004d66;
+}
+
+a{
+text-decoration:none;
+}
+
+body{
+  background-color: silver;
+}
+/* BUTTON */
+/* Dropdown Button */
+
+/* Dropdown button on hover & focus */
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    left: -140%;
+    top: 47px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+#myDropdown a {
+  color:grey;
+}
+
+
+.header {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  top: 0;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  vertical-align:middle;
+  text-align:center;
+  background-color:#004d66;
+}
+
+#placeholder  {
+  margin-top: 50px;
+}
+
+#logo {
+  width:40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.nav nav ul {
+}
+
+.nav nav ul li{
+  display:inline-block;
+  width:100px;
+}
+
+.nav nav ul li a:hover{
+  color:silver;
+}
+
+.nav nav ul li a  {
+  font-size:18px;
+  display:block;
+  color : white;
+}
+
+.nav nav img {
+  cursor: pointer;
+}
+
+.nav {
+  justify-content: space-between;
+}
+
+.main {
+  margin-top: 55px;
+}
+
+.container {
+  width:85%;
+  margin: 0 auto;
+}
+
+.flex-r {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+
+}
+
+.nav,ul {
+  align-items: center;
+}
+
+.flex-c {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.shadow {
+  box-shadow: 0 1px 10px black;
+  background: white;
+  padding: 5% 0;
+  margin: 5px 0;
+}
+
+
+footer {
+  background-color:#004d66!important;
+  padding: 3% 0!important;
+  justify-content: center;
+}
+
+footer ul:first-child {
+  margin-bottom: 3%;
+}
+
+footer i{
+  font-size: 40px!important;
+  color:white;
+}
+
+footer nav li {
+  display: inline-block;
+  margin:0 1%;
+}
+
+footer ul {
+  text-align: center;
+}
+
+footer nav li a, footer li {
+  color: silver;
+}
