@@ -1,1 +1,23 @@
 @import url(main.css);
+
+.choice ul {
+  text-align: center;
+}
+
+.choice li {
+  display: inline-flex;
+  cursor: pointer;
+  width:100px;
+  height:40px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.choice li:first-child {
+  background-color: rgba(0, 77, 102,0.1);
+}
+
+.choice li:hover {
+  background-color: rgba(0, 77, 102,0.1);
+}
