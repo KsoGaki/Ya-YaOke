@@ -84,25 +84,25 @@ body{
   border-radius: 50%;
 }
 
-nav ul {
+.nav nav ul {
 }
 
-nav ul li{
+.nav nav ul li{
   display:inline-block;
   width:100px;
 }
 
-nav ul li a:hover{
+.nav nav ul li a:hover{
   color:silver;
 }
 
-nav ul li a  {
+.nav nav ul li a  {
   font-size:18px;
   display:block;
   color : white;
 }
 
-nav img {
+.nav nav img {
   cursor: pointer;
 }
 
@@ -203,4 +203,32 @@ img {
 .childmosa {
   justify-content: space-around;
   margin: 0.5% 0;
+}
+
+footer {
+  background-color:#004d66!important;
+  padding: 3% 0!important;
+  justify-content: center;
+}
+
+footer ul:first-child {
+  margin-bottom: 3%;
+}
+
+footer i{
+  font-size: 40px!important;
+  color:white;
+}
+
+footer nav li {
+  display: inline-block;
+  margin:0 1%;
+}
+
+footer ul {
+  text-align: center;
+}
+
+footer nav li a, footer li {
+  color: silver;
 }
