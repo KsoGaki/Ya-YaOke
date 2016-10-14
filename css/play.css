@@ -9,6 +9,7 @@
 }
 
 .choice li {
+  border-radius: 5px;
   display: inline-flex;
   cursor: pointer;
   width:100px;
@@ -19,11 +20,11 @@
 }
 
 .choice li:first-child {
-  background-color: rgba(0, 77, 102,0.1);
+  background-color: rgba(0, 77, 102,0.25);
 }
 
 .choice li:hover {
-  background-color: rgba(0, 77, 102,0.1);
+  background-color: rgba(0, 77, 102,0.25);
 }
 
 .room div, .contest div, .private div{
@@ -41,7 +42,8 @@ select {
   height: 30px;
   font-size: 18px;
   overflow: hidden;
-  text-overflow: ellipsis
+  text-overflow: ellipsis;
+  border:1px solid #004d66;
 }
 
 option {
