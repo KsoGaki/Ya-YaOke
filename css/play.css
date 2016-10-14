@@ -1,5 +1,9 @@
 @import url(main.css);
 
+.choice {
+  margin-bottom: 5%;
+}
+
 .choice ul {
   text-align: center;
 }
@@ -20,4 +24,42 @@
 
 .choice li:hover {
   background-color: rgba(0, 77, 102,0.1);
+}
+
+.room div, .contest div, .private div{
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
+h4 {
+  font-size: 20px;
+  margin-right: 5%;
+}
+
+select {
+  width:200px;
+  height: 30px;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+
+option {
+  width:400px;
+}
+
+.info {
+  align-items: center;
+}
+
+.info p {
+  width: 300px;
+  font-size:18px ;
+  margin-bottom: 0.3%;
+  margin-left: 5%;
+}
+
+.info p:first-child {
+  margin-left: 0!important;
+  margin-bottom: 1%!important;
 }

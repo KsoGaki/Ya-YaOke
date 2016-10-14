@@ -24,7 +24,7 @@
 }
 
 .choice li:hover {
-  background-color: rgba(0, 77, 102,0.1);
+  background-color: rgba(0, 77, 102,0.1)!important;
 }
 
 .blocvid {
