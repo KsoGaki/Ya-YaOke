@@ -24,7 +24,7 @@
 }
 
 .choice li:hover {
-  background-color: rgba(0, 77, 102,0.25);
+  background-color: rgba(0, 77, 102,0.25)!important;
 }
 
 .room div, .contest div, .private div{
@@ -32,18 +32,23 @@
   margin-bottom: 3%;
 }
 
+.contest, .private {
+  display: none;
+}
+
 h4 {
   font-size: 20px;
   margin-right: 5%;
 }
 
-select {
+select, input{
   width:200px;
   height: 30px;
   font-size: 18px;
   overflow: hidden;
   text-overflow: ellipsis;
   border:1px solid #004d66;
+  text-align: center;
 }
 
 option {
@@ -64,4 +69,12 @@ option {
 .info p:first-child {
   margin-left: 0!important;
   margin-bottom: 1%!important;
+}
+
+.send {
+  background-color: #004d66;
+  color: white;
+  border-radius: 5px;
+  align-self: center;
+  height: 40px;
 }
