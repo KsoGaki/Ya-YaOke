@@ -74,7 +74,7 @@ body{
 }
 
 #placeholder  {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 #logo {
@@ -143,7 +143,7 @@ body{
 }
 
 .shadow {
-  box-shadow: 0 1px 10px black;
+  box-shadow: 1px 1px 10px black;
   background: white;
   padding: 5% 0;
   margin: 5px 0;
@@ -154,6 +154,7 @@ footer {
   background-color:#004d66!important;
   padding: 3% 0!important;
   justify-content: center;
+  margin-bottom: 0!important;
 }
 
 footer ul:first-child {
