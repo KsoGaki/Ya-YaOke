@@ -1,11 +1,8 @@
 @import url(main.css);
 
-
-
-
 .yaya img{
   width:80%;
-  text-align: center;
+  margin: 0 auto;
 }
 
 
@@ -35,9 +32,14 @@ span em strong {
   margin:0 auto;
 }
 
-.mosa img {
-  width:49%;
+.childmosa div {
+  max-width:49%;
   height:auto;
+  border: 1px solid #004d66;
+}
+
+.mosa img{
+  width:100%;
 }
 
 .childmosa {

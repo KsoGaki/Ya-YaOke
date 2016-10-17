@@ -1,10 +1,15 @@
 @import url(main.css);
 
+.choice {
+  margin-bottom: 5%;
+}
+
 .choice ul {
   text-align: center;
 }
 
 .choice li {
+  border-radius: 5px;
   display: inline-flex;
   cursor: pointer;
   width:100px;
@@ -15,9 +20,61 @@
 }
 
 .choice li:first-child {
-  background-color: rgba(0, 77, 102,0.1);
+  background-color: rgba(0, 77, 102,0.25);
 }
 
 .choice li:hover {
-  background-color: rgba(0, 77, 102,0.1);
+  background-color: rgba(0, 77, 102,0.25)!important;
+}
+
+.room div, .contest div, .private div{
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
+.contest, .private {
+  display: none;
+}
+
+h4 {
+  font-size: 20px;
+  margin-right: 5%;
+}
+
+select, input{
+  width:200px;
+  height: 30px;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border:1px solid #004d66;
+  text-align: center;
+}
+
+option {
+  width:400px;
+}
+
+.info {
+  align-items: center;
+}
+
+.info p {
+  width: 300px;
+  font-size:18px ;
+  margin-bottom: 0.3%;
+  margin-left: 5%;
+}
+
+.info p:first-child {
+  margin-left: 0!important;
+  margin-bottom: 1%!important;
+}
+
+.send {
+  background-color: #004d66;
+  color: white;
+  border-radius: 5px;
+  align-self: center;
+  height: 40px;
 }

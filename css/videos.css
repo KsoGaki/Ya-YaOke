@@ -1,1 +1,50 @@
 @import url(main.css);
+
+
+.choice {
+  margin-bottom: 5%;
+}
+
+.choice ul {
+  text-align: center;
+}
+
+.choice li {
+  display: inline-flex;
+  cursor: pointer;
+  width:175px;
+  height:40px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px
+}
+
+.choice li:first-child {
+  background-color: rgba(0, 77, 102,0.25);
+}
+
+.choice li:hover {
+  background-color: rgba(0, 77, 102,0.25)!important;
+}
+
+.blocvid {
+  border: 1px solid #004d66;
+  flex-wrap: wrap;
+  padding:4%;
+  justify-content: space-around;
+}
+
+.blocvid div {
+  max-width: 17.5% ;
+  height:auto;
+  margin: 2% 0;
+}
+
+.blocvid img {
+  width: 100%;
+}
+
+time {
+  float: right
+}
