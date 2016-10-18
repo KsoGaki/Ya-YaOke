@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+.flex-r {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.flex-c {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.btn-header {
+  position: fixed;
+  top:0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: white;
+}
+
+.btn-header span:after,.btn-header span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -9px;
+
+}
+.parallax {
+    background-image: url("../pics/yaya_logo.png");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+.parallaxhead {
+  background-color:rgba(0,0,0,0.7);
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+ height: 60px;
+}
+
+header ul {
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
