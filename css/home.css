@@ -34,7 +34,12 @@ html, body {
   flex-direction: column;
 }
 
-.btn-header {
+#btn-header span {
+  position: relative;
+  display: block;
+}
+
+#btn-header {
   position: fixed;
   top:0;
   right: 0;
@@ -46,13 +51,43 @@ html, body {
   background-color: white;
 }
 
-.btn-header span:after,.btn-header span:before {
+#btn-header span:after, #btn-header span:before {
   content: "";
   position: absolute;
   left: 0;
   top: -9px;
-
 }
+
+#btn-header span:after{
+  top: 9px;
+}
+
+#btn-header span, #btn-header span:after, #btn-header span:before {
+  width: 100%;
+  height: 5px;
+  background-color: #888;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+
+#btn-header.on span {
+  background-color: transparent;
+}
+
+#btn-header.on span:before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#btn-header.on span:after {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+
+#btn-header.on + .nav {
+  opacity: 1;
+  visibility: visible;
+}
+
 .parallax {
     background-image: url("../pics/yaya_logo.png");
     height: 100%;
@@ -71,11 +106,19 @@ html, body {
   background-size: cover;
 }
 
-header {
- height: 60px;
+#nav{
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.2s;
+  -moz-transition: height 0.2s;
+  transition: height 0.2s;
 }
 
-header ul {
+.open {
+  height: 60px!important;
+}
+
+#nav nav {
   justify-content: center;
   align-items: center;
   height: 60px;
