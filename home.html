@@ -9,34 +9,67 @@
   <title>Ya-YaOke - Home</title>
   <link rel="shortcut icon" href="pics/favicon.png">
   <link rel="stylesheet" href="css/home.css">
+  <link href="css/preloader.css" rel="stylesheet">
+      <!-- ===== STYLESHEETS ===== -->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Magnific Popup -->
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <!-- Owl Carousel -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <!-- Preloader -->
+    <link href="css/preloader.css" rel="stylesheet">
+    <!-- Main styles -->
+    <link href="css/home.css" rel="stylesheet">
+    <!-- Responsive styles -->
+    <link href="css/responsive.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 </head>
+
 <body>
-  <div class="header">
-    <div class="container flex-r nav">
-      <a href="home.html"><img id="placeholder" src="pics/vignette.png" alt=""></a>
-      <nav>
-        <ul class="flex-r">
-          <li><a href="home.html">HOME</a></li>
-          <li><a href="play.html">JOUE</a></li>
-          <li><a href="videos.html">VIDEOS</a></li>
-          <li>
-            <div class="dropdown">
-              <img onclick="myFunction()" class="dropbtn" id="logo" src="pics/icone_guest.png" alt="">
-              <div id="myDropdown" class="dropdown-content">
-                <a href="#">Se Connecter</a>
-                <a href="#">S'inscrire</a>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </nav>
+    <!-- Preloader -->
+    <div id="loader-wrapper">
+      <div class="loader">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
       </div>
     </div>
+    <!-- end Preloader -->
+
+  <header>
+      <!-- Toggle Menu -->
+      <button class="toggle-btn">
+        <span class="lines"></span>
+      </button>
+      <div class="menu">
+        <ul class="nav">
+          <li class="active">
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#JOUER">Let's try</a>
+          </li>
+          <li>
+            <a href="#VIDEOS">Let's see</a>
+          </li>          
+        </ul>
+      </div>
+      </header>
+      <!-- end Toggle menu -->
+    </header>
+    <div class="parallax">
     <div class="flex-c main">
+   
       <div class="yaya shadow">
           <div class="container flex-c">
-            <img src="pics/yaya_logo.png" alt="">
+         
+       <!--      <img src="pics/yaya_logobeta.png" alt=""> -->
         </div>
+  </div>
+      </div>
       </div>
       <div class="shadow">
         <div class="container">
@@ -72,28 +105,30 @@
             </ul>
           </nav>
         </div>
+        </div>
+        </div>
       </footer>
     </div>
   </body>
-  <script>
-    function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-    }
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropbtn')) {
+   <script src="js/jquery.min.js"></script>
+    <!-- Google Maps Library -->
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Retina Graphics -->
+    <script src="js/retina.min.js"></script>
+    <!-- Smooth Scroll -->
+    <script src="js/smoothscroll.min.js"></script>
+    <!-- Theme Plugins -->
+    <script src="js/theme-plugins.min.js"></script>
+    <!-- Custom Scripts -->
+    <script src="js/scripts.js"></script>
+  <script src="js/scripts.js"></script>
 
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
-        }
-      }
-    }
-  </script>
 </html>
+
 <!--  <h3><strong>B</strong>EST VIDEOS TODAY</h3>
   <div class="flex-r">
     <div class="mainvid">

@@ -1,147 +1,9 @@
-
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family:"Josefin Sans";
-color : #004d66;
-}
-
-a{
-text-decoration:none;
-}
-
-html, body {
-  height: 100%;
-}
-
-
-.header {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  height: 50px;
-  width: 100%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  top: 0;
-  justify-content: space-between;
-  position: fixed;
-  z-index: 2;
-  vertical-align:middle;
-  text-align:center;
-  background-color:#004d66;
-}
-
-#placeholder  {
-  margin-top: 60px;
-}
-
-#logo {
-  width:40px;
-  height: 40px;
-  background-color: white;
-  border-radius: 50%;
-}
-
-
-.main {
-  margin-top: 55px;
-}
-
-.container {
-  width:100%;
-  margin: 0 auto;
-}
-
-.flex-r {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-
-}
-
-.nav,ul {
-  align-items: center;
-}
-
-.flex-c {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-
-  min-height: 100%;
-  height: 100%;
-
-}
-
-.shadow {
-/*  box-shadow: 1px 1px 10px black;*/
-  background: white;
-/*  padding: 5% 0;
-  margin: 5px 0;*/
-}
-
-
-footer {
-  background-color:#004d66!important;
-  padding: 3% 0!important;
-  justify-content: center;
-  margin-bottom: 0!important;
-}
-
-footer ul:first-child {
-  margin-bottom: 3%;
-}
-
-footer i{
-  font-size: 40px!important;
-  color:white;
-}
-
-footer nav li {
-  display: inline-block;
-  margin:0 1%;
-}
-
-footer ul {
-  text-align: center;
-}
-
-footer nav li a, footer li {
-  color: silver;
-}
-
-h3 {
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 2%;
-}
-
-h3 strong {
-  font-size: 40px;
-}
-
-hr {
-  width:25%;
-  border-top: 1px solid #004d66;
-  box-shadow: 0px 1px 3px 0px rgba(0, 77, 102,0.2);
-  margin: 0 auto;
-  margin-bottom:3%!important;
-}
 #loader-wrapper {
   position: fixed;
   z-index: 1000;
   top: 0;
   left: 0;
-  background: rgb(255, 255, 255);
+  background: blue;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -178,7 +40,7 @@ hr {
 
 .loaded #loader-wrapper {
   visibility: hidden;
-  background: rgba(255, 255, 255, 0);
+  background: blue;
   -webkit-transition: ease-out 0.3s;
   -moz-transition: ease-out 0.3s;
   -o-transition: ease-out 0.3s;
@@ -234,4 +96,3 @@ hr {
     transform: scale(1.0);
   }
 }
-
