@@ -16,25 +16,6 @@ li {
   list-style: none;
 }
 
-h2 {
-  text-align: center;
-  color: white;
-  font-size: 30px;
-}
-
-h2:after {
-  content: '';
-  width: 12%;
-  position: relative;
-  top: 10px;
-  background-color: white;
-  display: block;
-  height: 2px;
-  margin: 0 auto;
-  box-shadow: 0 0 10px white;
-  overflow: hidden;
-}
-
 .flex-r {
   display: -webkit-flex;
   display: -ms-flex;
@@ -182,7 +163,7 @@ h2:after {
   background-color: #004d66;
   justify-content: space-around;
   align-content: center;
-  height: 115%;
+  padding: 5% 0;
 }
 
 .rulesr{
@@ -191,7 +172,7 @@ h2:after {
 }
 
 .rulesr div{
-  width:30%;
+  width:25%;
   height: auto;
   overflow: hidden;
   border: 3px solid white;
@@ -203,7 +184,7 @@ h2:after {
   height: 100%;
 }
 
-.spanup {
+.articleup {
   position: relative;
   height: 0;
   display: block;
@@ -211,14 +192,31 @@ h2:after {
   -webkit-transition: height 0.2s;
   -moz-transition: height 0.2s;
   transition: height 0.2s;
-  background-color: #004d66;
+  background-color: rgba(71, 161, 143,0.5);
 }
 
-.rulesr div:hover > .spanup {
+.rulesr div:hover > .articleup {
   height:100%;
 }
 
 
 .topvid {
     background-color: rgba(0,0,0,.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.mainvid {
+  width:65%;
+  height: auto;
+}
+
+.mainvid img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 200px darkgrey;
+}
+
+.footer {
+  background-color:#004d66;
 }
