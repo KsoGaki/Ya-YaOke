@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -12,8 +16,23 @@ li {
   list-style: none;
 }
 
-html, body {
-  height: 100%;
+h2 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+h2:after {
+  content: '';
+  width: 12%;
+  position: relative;
+  top: 10px;
+  background-color: white;
+  display: block;
+  height: 2px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px white;
+  overflow: hidden;
 }
 
 .flex-r {
@@ -151,7 +170,7 @@ html, body {
 }
 
 .opacity {
-  background-color:rgba(0,0,0,0.1);
+  background-color: rgba(0,50,0,.1);
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -162,7 +181,8 @@ html, body {
 .rules {
   background-color: #004d66;
   justify-content: space-around;
-  align-content: space-around;
+  align-content: center;
+  height: 115%;
 }
 
 .rulesr{
@@ -171,16 +191,19 @@ html, body {
 }
 
 .rulesr div{
-  width:25%;
+  width:30%;
   height: auto;
+  overflow: hidden;
+  border: 3px solid white;
+  border-radius: 5px;
 }
 
 .rules img {
   width: 100%;
-  border: 1px solid white;
+  height: 100%;
 }
 
-.rules span {
+.spanup {
   position: relative;
   height: 0;
   display: block;
@@ -188,9 +211,14 @@ html, body {
   -webkit-transition: height 0.2s;
   -moz-transition: height 0.2s;
   transition: height 0.2s;
-  background-color: white;
+  background-color: #004d66;
 }
 
-.rulesr div:hover #spanup {
+.rulesr div:hover > .spanup {
   height:100%;
+}
+
+
+.topvid {
+    background-color: rgba(0,0,0,.8);
 }
