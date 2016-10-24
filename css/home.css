@@ -4,8 +4,14 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 html, body {
   height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 a {
@@ -222,22 +228,22 @@ li {
 
 
 .img1,.img2,.img3 {
-  max-width: 300px;
+  max-width: 125px;
   height: auto;
   position: absolute;
 }
 
-.img1 {
-  top:20%;
-  left: 10%;
+.img2 {
+  top:75%;
+  left: 15%;
 }
 
-.img2 {
+.img1 {
   top:10%;
-  left: 50%;
+  left: 45%;
 }
 
 .img3 {
-  top:20%;
-  right: 10%;
+  top:75%;
+  right: 15%;
 }
