@@ -10,8 +10,6 @@
 
 html, body {
   height: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 a {
@@ -149,11 +147,20 @@ li {
 }
 
 .logo {
-    background-image: url("../pics/yaya_logo.png");
+    background-image: url("../pics/bg1.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 90%;
+}
+
+.sun {
+  background-image: url("../pics/yaya_logobeta.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  height: 100%;
 }
 
 .opacity {
@@ -236,6 +243,7 @@ li {
 .img2 {
   top:75%;
   left: 15%;
+  animation: fa-spin 4s infinite ease;
 }
 
 .img1 {
@@ -246,4 +254,5 @@ li {
 .img3 {
   top:75%;
   right: 15%;
+  animation: fa-spin 4s infinite ease;
 }
