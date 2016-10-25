@@ -23,23 +23,25 @@
       </nav>
     </div>
     <div class="parallax logo" id="home">
-      <div class="parallax sun">
-        <div class="layer1">
-          <img src="pics/layer1.png" alt="">
-        </div>
-        <div class="layer2">
-          <img src="pics/layer2.png" alt="">
-        </div>
-        <div class="layer3">
-          <img src="pics/layer3.png" alt="">
-        </div>
-        <div class="layer4">
+            <div class="la layer4">
           <img src="pics/layer4.png" alt="">
         </div>
+      <div class="parallax sun">
+      
+        <div class="la layer2">
+          <img src="pics/layer2.png" alt="">
+        </div>
+        <div class="la layer3">
+          <img src="pics/layer3.png" alt="">
+        </div>
+
 
         <img class="img1" src="pics/logo1.png" alt="">
       </div>
       <div class="parallax rules flex-c" id="rules">
+        <div class="la layer1">
+          <img src="pics/layer1.png" alt="">
+        </div>
         <div class="flex-r rulesr">
           <div>
             <article class="articleup">
@@ -118,9 +120,20 @@
     });
   </script>
   <script type="text/javascript">
-    function pageScroll() {
-      window.scrollTop = 678
-      scrolldelay = setTimeout('pageScroll()',10000);
-    }
+    window.addEventListener 'scroll', (event) ->
+  topDistance = @pageYOffset 
+  layers = document.querySelectorAll("[data-type='parallax']")
+  
+  for layer in layers
+    depth = layer.getAttribute('data-depth')
+    movement = -(topDistance * depth)
+    translate3d = 'translate3d(0, ' + movement + 'px, 0)'
+    layer.style['-webkit-transform'] = translate3d
+    layer.style['-moz-transform'] = translate3d
+    layer.style['-ms-transform'] = translate3d
+    layer.style['-o-transform'] = translate3d
+    layer.style.transform = translate3d
+  return
+  
   </script>
 </html>

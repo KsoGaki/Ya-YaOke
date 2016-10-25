@@ -247,24 +247,36 @@ li {
 .layer1,.layer2,.layer3,.layer4 {
   margin: 0 auto;
   position: absolute;
+  width: 100%;
+}
+.la img{
+  width:100%;
 }
 
 .layer1 {
-
+ transform: translateY(-254px);
   z-index: 4;
 }
 
 .layer2 {
-    transform: translateY(638px);
+
+    transform: translateY(150%);
     z-index: 3;
 }
 
 .layer3 {
-    transform: translateY(600px);
+    transform: translateY(120%);
     z-index: 2;
 }
 
 .layer4 {
-    transform: translateY(550px);
-    z-index: 1;
+    transform: translateY(70%);
+  
 }
+#hero
+  .layer-bg.layer{"data-type" => "parallax", "data-depth" => "0.10"}
+  .layer1.layer{"data-type" => "parallax","data-depth" => "0.20"}
+  .layer2.layer{"data-type" => "parallax","data-depth" => "0.50"}
+  .layer3.layer{"data-type" => "parallax","data-depth" => "0.80"}
+  .layer-overlay.layer{"data-type" => "parallax","data-depth" => "0.85"}
+  .layer4.layer{"data-type" => "parallax","data-depth" => "1.00"}
