@@ -172,6 +172,8 @@ li {
 }
 
 .rules {
+  position: relative;
+  z-index: 999;
   background-color: #004d66;
   justify-content: space-around;
   align-content: center;
@@ -244,27 +246,28 @@ li {
 
 
   /*animation: fa-spin 4s infinite ease;*/
-.layer1,.layer2,.layer3,.layer4 {
+.la {
   margin: 0 auto;
   position: absolute;
+  width: 100%;
+}
+
+.la img {
+  width: 100%;
 }
 
 .layer1 {
-
   z-index: 4;
 }
 
 .layer2 {
-    transform: translateY(638px);
     z-index: 3;
 }
 
 .layer3 {
-    transform: translateY(600px);
     z-index: 2;
 }
 
 .layer4 {
-    transform: translateY(550px);
     z-index: 1;
 }
