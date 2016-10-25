@@ -234,25 +234,37 @@ li {
 }
 
 
-.img1,.img2,.img3 {
+.img1{
   max-width: 125px;
   height: auto;
+  top:10%;
+  left: 45%;
   position: absolute;
 }
 
-.img2 {
-  top:75%;
-  left: 15%;
-  animation: fa-spin 4s infinite ease;
+
+  /*animation: fa-spin 4s infinite ease;*/
+.layer1,.layer2,.layer3,.layer4 {
+  margin: 0 auto;
+  position: absolute;
 }
 
-.img1 {
-  top:10%;
-  left: 45%;
+.layer1 {
+
+  z-index: 4;
 }
 
-.img3 {
-  top:75%;
-  right: 15%;
-  animation: fa-spin 4s infinite ease;
+.layer2 {
+    transform: translateY(638px);
+    z-index: 3;
+}
+
+.layer3 {
+    transform: translateY(600px);
+    z-index: 2;
+}
+
+.layer4 {
+    transform: translateY(550px);
+    z-index: 1;
 }
