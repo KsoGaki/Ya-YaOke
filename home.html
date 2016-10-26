@@ -23,16 +23,16 @@
       </nav>
     </div>
     <div class="parallax logo" id="home">
-      <div class="la layer4">
+      <div class="la layer8">
         <img src="pics/layer4.png" alt="">
       </div>
-      <div class="la layer3">
+      <div class="la layer7">
         <img src="pics/layer3.png" alt="">
       </div>
-      <div class="la layer2">
+      <div class="la layer6">
         <img src="pics/layer2.png" alt="">
       </div>
-      <div class="la layer1">
+      <div class="la layer5">
         <img src="pics/layer1.png" alt="">
       </div>
       <div class="la layer2">
@@ -130,17 +130,18 @@
   </script>
   <script type="text/javascript">
     $(document).ready(function(){
+      $win = $(window).height();
       $scroll = $(document).scrollTop();
-      $('.layer2').css("top",500 + $scroll*0.5+"px");
-      $('.layer3').css("top",350 + $scroll*0.75+"px");
-      $('.layer4').css("top",300 + $scroll*0.9+"px");
-      $('.layer1').css("top",550 - $scroll*0.15+"px");
+      $('.layer1').css("top",$win*1.8 - $scroll*0.1+"px");
+      $('.layer2').css("top",$win*1.5 + $scroll*0.2+"px");
+      $('.layer3').css("top",$win*1.25 + $scroll*0.3+"px");
+      $('.layer4').css("top",$win + $scroll*0.4+"px");
       $(window).scroll(function(){
         $scroll = $(document).scrollTop();
-        $('.layer2').css("top",500 + $scroll*0.5+"px");
-        $('.layer3').css("top",350 + $scroll*0.75+"px");
-        $('.layer4').css("top",300 + $scroll*0.9+"px");
-        $('.layer1').css("top",550 - $scroll*0.15+"px");
+        $('.layer1').css("top",$win*1.8 - $scroll*0.1+"px");
+        $('.layer2').css("top",$win*1.5 + $scroll*0.2+"px");
+        $('.layer3').css("top",$win*1.25 + $scroll*0.3+"px");
+        $('.layer4').css("top",$win + $scroll*0.4+"px");
       });
     });
   </script>
