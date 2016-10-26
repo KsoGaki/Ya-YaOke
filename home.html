@@ -23,23 +23,33 @@
       </nav>
     </div>
     <div class="parallax logo" id="home">
+      <div class="la layer4">
+        <img src="pics/layer4.png" alt="">
+      </div>
+      <div class="la layer3">
+        <img src="pics/layer3.png" alt="">
+      </div>
+      <div class="la layer2">
+        <img src="pics/layer2.png" alt="">
+      </div>
+      <div class="la layer1">
+        <img src="pics/layer1.png" alt="">
+      </div>
+      <div class="la layer2">
+        <img src="pics/layer2.png" alt="">
+      </div>
+      <div class="la layer3">
+        <img src="pics/layer3.png" alt="">
+      </div>
+      <div class="la layer4">
+        <img src="pics/layer4.png" alt="">
+      </div>
+      <div class="la layer1">
+        <img src="pics/layer1.png" alt="">
+      </div>
       <div class="parallax sun">
-        <div class="la layer2">
-          <img src="pics/layer2.png" alt="">
-        </div>
-        <div class="la layer3">
-          <img src="pics/layer3.png" alt="">
-        </div>
-        <div class="la layer4">
-          <img src="pics/layer4.png" alt="">
-        </div>
-
         <img class="img1" src="pics/logo1.png" alt="">
       </div>
-
-                  <div class="la layer1">
-                    <img src="pics/layer1.png" alt="">
-                  </div>
       <div class="parallax rules flex-c" id="rules">
         <div class="flex-r rulesr">
           <div>
@@ -121,16 +131,16 @@
   <script type="text/javascript">
     $(document).ready(function(){
       $scroll = $(document).scrollTop();
-      $('.layer2').css("top",550 - $scroll*0.5+"px");
-      $('.layer3').css("top",530 - $scroll*0.75+"px");
-      $('.layer4').css("top",500 - $scroll+"px");
-      $('.layer1').css("top",500 - $scroll*0.15+"px");
+      $('.layer2').css("top",500 + $scroll*0.5+"px");
+      $('.layer3').css("top",350 + $scroll*0.75+"px");
+      $('.layer4').css("top",300 + $scroll*0.9+"px");
+      $('.layer1').css("top",550 - $scroll*0.15+"px");
       $(window).scroll(function(){
         $scroll = $(document).scrollTop();
-        $('.layer2').css("top",550 - $scroll*0.5+"px");
-        $('.layer3').css("top",530 - $scroll*0.75+"px");
-        $('.layer4').css("top",500 - $scroll+"px");
-        $('.layer1').css("top",500 - $scroll*0.15+"px");
+        $('.layer2').css("top",500 + $scroll*0.5+"px");
+        $('.layer3').css("top",350 + $scroll*0.75+"px");
+        $('.layer4').css("top",300 + $scroll*0.9+"px");
+        $('.layer1').css("top",550 - $scroll*0.15+"px");
       });
     });
   </script>

@@ -144,6 +144,7 @@ li {
 
 .parallax {
   height: 100%;
+  position: relative;
 }
 
 .logo {
@@ -161,6 +162,7 @@ li {
   background-repeat: no-repeat;
   background-size: 90%;
   height: 100%;
+  z-index: 3;
 }
 
 .opacity {
@@ -178,6 +180,7 @@ li {
   justify-content: space-around;
   align-content: center;
   padding: 5% 0;
+  z-index: 999;
 }
 
 .rulesr{
@@ -218,6 +221,7 @@ li {
     background-color: rgba(0,0,0,.8);
     justify-content: center;
     align-items: center;
+    z-index: 999;
 }
 
 .mainvid {
@@ -233,6 +237,7 @@ li {
 
 .footer {
   background-color:#004d66;
+  z-index: 999;
 }
 
 
@@ -257,11 +262,13 @@ li {
 }
 
 .layer1 {
-  z-index: 4;
+  z-index: 5;
+  opacity: 1;
 }
 
 .layer2 {
-    z-index: 3;
+    z-index: 4;
+    opacity: 0.95;
 }
 
 .layer3 {
