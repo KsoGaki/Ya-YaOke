@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.flex-r {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.flex-c {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.parallax {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sun {
+  /*background-image: url(../pics/bg1.png);*/
+  background-size: 290%;
+  height: 165%;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.yaya_logo {
+  background-image: url(../pics/yaya_logobeta.png);
+  background-size: 90%;
+  height: 100%;
+  z-index: 1;
+}
+
+.cloud {
+  position: absolute;
+  width: 115%;
+  left:-7.5%;
+  overflow-x: hidden;
+}
+
+.cloud img {
+  width: 100%;
+}
+
+.cloud1,.cloud2{
+  transform: rotate(180deg);
+}
+
+.cloud1,.cloud4 {
+  z-index: 2;
+}
+
+.cloud2,.cloud3 {
+  z-index: 1;
+}

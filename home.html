@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <script src="js/jquery.min.js"></script>
+    <title>Ya-YaOke - Home</title>
+    <link rel="shortcut icon" href="pics/favicon.png">
+    <link rel="stylesheet" href="css/home.css">
+      <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+  </head>
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+    </div>
+
+  <body onload='pageScroll()'>
+
+
+    <a id="btn-header" class="flex-r"><span></span></a>
+    <div id="nav">
+      <nav class="flex-c">
+        <ul class="flex-r">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#rules">Let's watch</a></li>
+          <li><a href="#video">Let's play</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="parallax logo" id="home">
+            <div class="la layer4">
+          <img src="pics/layer4.png" alt="">
+        </div>
+      <div class="parallax sun">
+      
+        <div class="la layer2">
+          <img src="pics/layer2.png" alt="">
+        </div>
+        <div class="la layer3">
+          <img src="pics/layer3.png" alt="">
+        </div>
+
+
+        <img class="img1" src="pics/logo1.png" alt="">
+      </div>
+      <div class="parallax rules flex-c" id="rules">
+        <div class="la layer1">
+          <img src="pics/layer1.png" alt="">
+        </div>
+        <div class="flex-r rulesr">
+          <div>
+            <article class="articleup">
+
+            </article>
+            <img src="https://a2ua.com/white/white-003.jpg" alt="">
+          </div>
+          <div>
+            <article class="articleup">
+
+            </article>
+            <img src="https://a2ua.com/white/white-003.jpg" alt="">
+          </div>
+          <div>
+            <article class="articleup">
+
+            </article>
+            <img src="https://a2ua.com/white/white-003.jpg" alt="">
+          </div>
+        </div>
+        <div class="flex-r rulesr">
+          <div>
+            <article class="articleup">
+
+            </article>
+            <img src="https://a2ua.com/white/white-003.jpg" alt="">
+          </div>
+          <div>
+            <article class="articleup">
+
+            </article>
+            <img src="https://a2ua.com/white/white-003.jpg" alt="">
+          </div>
+          <div>
+            <article class="articleup">
+
+            </article>
+            <img src="https://a2ua.com/white/white-003.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <!--<div class="parallax play">
+
+      </div>
+      <div class="parallax videos">
+
+      </div>-->
+      <div class="parallax logo" id="video">
+        <div class="parallax topvid flex-c">
+          <div class="mainvid">
+            <img src="https://i.ytimg.com/vi/NM3qSPcjcgY/maxresdefault.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="parallax footer">
+
+      </div>
+    </div>
+  </body>
+  <script src="js/toggle.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+  <script src="js/main.js"></script>
+  <script>
+    $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    window.addEventListener 'scroll', (event) ->
+  topDistance = @pageYOffset 
+  layers = document.querySelectorAll("[data-type='parallax']")
+  
+  for layer in layers
+    depth = layer.getAttribute('data-depth')
+    movement = -(topDistance * depth)
+    translate3d = 'translate3d(0, ' + movement + 'px, 0)'
+    layer.style['-webkit-transform'] = translate3d
+    layer.style['-moz-transform'] = translate3d
+    layer.style['-ms-transform'] = translate3d
+    layer.style['-o-transform'] = translate3d
+    layer.style.transform = translate3d
+  return
+
+  
+  </script>
+</html>
