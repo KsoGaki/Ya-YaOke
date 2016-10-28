@@ -9,6 +9,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="icon" href="pics/favicon.png" />
     <!-- CSS -->
 
     <!-- FONT -->
@@ -17,6 +19,9 @@
 
     <!-- JS -->
     <script src="js/jquery.js" charset="utf-8"></script>
+    <script src="js/classie.js" charset="utf-8"></script>
+    <script src="js/vendor/modernizr-2.6.2.min.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
     <!-- JS -->
   </head>
   <!-- LOADER -->
@@ -32,15 +37,67 @@
 
 <!-- LOADER -->
   <body>
-      <!-- Parallax FirstSide -->
-      <div class="parallax sun">
-        <div class="cloud cloud1"><img src="pics/cloud1.png" alt=""></div>
-        <div class="cloud cloud2"><img src="pics/cloud4.png" alt=""></div>
-        <div class="cloud cloud3"><img src="pics/cloud4.png" alt=""></div>
-        <div class="cloud cloud4"><img src="pics/cloud1.png" alt=""></div>
-        <div class="parallax yaya_logo"></div>
+      <!-- Parallax FirstSlide -->
+      <div class="parallax yaya_logo">
+        <div class="cloudtop flex-c">
+          <img src="pics/bigcloudtop.png" alt="">
+        </div>
       </div>
-      <!-- Parallax FirstSide -->
+      <div class="cloudback flex-c">
+        <img src="pics/cloud5.png" alt="">
+      </div>
+      <!-- Parallax FirstSlide -->
+      <!-- Parallax Rules -->
+      <div class="parallax rules flex-c">
+        <div class="flex-c">
+          <div class="flex-r">
+            <i></i>
+            <h2></h2>
+          </div>
+          <p></p>
+        </div>
+        <div class="flex-c">
+          <div class="flex-r">
+            <i></i>
+            <h2></h2>
+          </div>
+          <p></p>
+        </div>
+        <div class="flex-c">
+          <div class="flex-r">
+            <i></i>
+            <h2></h2>
+          </div>
+          <p></p>
+        </div>
+        <div class="flex-c">
+          <div class="flex-r">
+            <i></i>
+            <h2></h2>
+          </div>
+          <p></p>
+        </div>
+      </div>
+      <div class="parallax">
+
+      </div>
+      <!-- Parallax Rules -->
   </body>
-  <script src="js/cloud.js" charset="utf-8"></script>
 </html>
+
+
+<!-- <p>
+  <input type="text" id="text" placeholder="Ajoute..." />
+  <input type="button" value="Ajoute" onclick="ajout()"  />
+</p>
+<ul id="liste">
+  <li>Bob</li>
+  <li>Julien</li>
+  <li>Roger</li>
+</ul>
+</div>
+<script type="text/javascript">
+function ajout() {
+  $("#liste").append("<li>"+ document.getElementById('text').value +"</li>");
+}
+</script> -->

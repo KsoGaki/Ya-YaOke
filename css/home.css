@@ -38,43 +38,37 @@ li {
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.sun {
-  /*background-image: url(../pics/bg1.png);*/
-  background-size: 290%;
-  height: 165%;
-  background-attachment: fixed;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  height: 100%;
 }
 
 .yaya_logo {
   background-image: url(../pics/yaya_logobeta.png);
-  background-size: 90%;
-  height: 100%;
-  z-index: 1;
+  background-size: 75%;
+  z-index: 2;
+  background-attachment: fixed;
 }
 
-.cloud {
+.rules {
+  background-color: #004D66;
+}
+
+.cloudtop {
+  max-width: 100%;
   position: absolute;
-  width: 115%;
-  left:-7.5%;
-  overflow-x: hidden;
+  bottom: 0;
 }
 
-.cloud img {
+.cloudtop img {
   width: 100%;
 }
 
-.cloud1,.cloud2{
-  transform: rotate(180deg);
+.cloudback {
+  max-width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
 }
 
-.cloud1,.cloud4 {
-  z-index: 2;
-}
-
-.cloud2,.cloud3 {
-  z-index: 1;
+.cloudback img {
+  width: 100%;
 }
