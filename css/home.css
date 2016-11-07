@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-    font-family: monospace;
+  font-family: "Itim";
 }
 
 html,body {
@@ -69,6 +69,7 @@ body {
 .cloudbot {
   position: absolute;
   width: 100%;
+  z-index: 9;
 }
 
 .cloudtop img,.cloudbot img {
@@ -92,6 +93,7 @@ body {
   justify-content: space-around;
   align-content: center;
   color: white;
+
 }
 
 .rules .container {
@@ -107,7 +109,8 @@ body {
 }
 
 .case {
-  width: 25%;
+  width: 45%;
+  margin-right: 5%;
 }
 
 .case div {
@@ -125,6 +128,15 @@ body {
   margin-top: 5%;
   line-height: 25px;
   font-size: 15px;
+  width: 95%;
+  text-align: justify;
 }
 
 /*    RULES    */
+
+.logop {
+  background-image: url(../pics/yaya_logobeta.png);
+  background-size: 40%;
+  background-position-y:20%;
+  background-attachment: fixed;
+}
