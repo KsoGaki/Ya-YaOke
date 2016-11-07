@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/jquery.js"></script>
     <title>Ya-YaOke - Home</title>
     <link rel="shortcut icon" href="pics/favicon.png">
     <link rel="stylesheet" href="css/home.css">
@@ -15,6 +15,7 @@
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
   </head>
+<<<<<<< HEAD
     <div id="loader-wrapper">
       <div id="loader"></div>
       <div class="loader-section section-left"></div>
@@ -24,6 +25,9 @@
   <body onload='pageScroll()'>
 
 
+=======
+  <body>
+>>>>>>> 9d6610e66e7ef3e66b5378d7f058cb39a0bbaf40
     <a id="btn-header" class="flex-r"><span></span></a>
     <div id="nav">
       <nav class="flex-c">
@@ -35,25 +39,33 @@
       </nav>
     </div>
     <div class="parallax logo" id="home">
-            <div class="la layer4">
-          <img src="pics/layer4.png" alt="">
-        </div>
+      <div class="lat layer8">
+        <img src="pics/layer4.png" alt="">
+      </div>
+      <div class="lat layer7">
+        <img src="pics/layer3.png" alt="">
+      </div>
+      <div class="lat layer6">
+        <img src="pics/layer2.png" alt="">
+      </div>
+      <div class="lat layer5">
+        <img src="pics/layer1.png" alt="">
+      </div>
+      <div class="la layer2">
+        <img src="pics/layer2.png" alt="">
+      </div>
+      <div class="la layer3">
+        <img src="pics/layer3.png" alt="">
+      </div>
+      <div class="la layer4">
+        <img src="pics/layer4.png" alt="">
+      </div>
+      <div class="la layer1">
+        <img src="pics/layer1.png" alt="">
+      </div>
       <div class="parallax sun">
-      
-        <div class="la layer2">
-          <img src="pics/layer2.png" alt="">
-        </div>
-        <div class="la layer3">
-          <img src="pics/layer3.png" alt="">
-        </div>
-
-
-        <img class="img1" src="pics/logo1.png" alt="">
       </div>
       <div class="parallax rules flex-c" id="rules">
-        <div class="la layer1">
-          <img src="pics/layer1.png" alt="">
-        </div>
         <div class="flex-r rulesr">
           <div>
             <article class="articleup">
@@ -113,10 +125,13 @@
       </div>
     </div>
   </body>
+<<<<<<< HEAD
   <script src="js/toggle.js" charset="utf-8"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
   <script src="js/main.js"></script>
+=======
+>>>>>>> 9d6610e66e7ef3e66b5378d7f058cb39a0bbaf40
   <script>
     $(function() {
       $('a[href*="#"]:not([href="#"])').click(function() {
@@ -134,6 +149,7 @@
     });
   </script>
   <script type="text/javascript">
+<<<<<<< HEAD
     window.addEventListener 'scroll', (event) ->
   topDistance = @pageYOffset 
   layers = document.querySelectorAll("[data-type='parallax']")
@@ -150,5 +166,30 @@
   return
 
   
+=======
+    $(document).ready(function(){
+      $win = $(window).height();
+      $scroll = $(document).scrollTop();
+      $('.layer1').css("top",$win*1.3 - $scroll*0.1+"px");
+      $('.layer2').css("top",$win*1.1 + $scroll*0.2+"px");
+      $('.layer3').css("top",$win*1.025 + $scroll*0.3+"px");
+      $('.layer4').css("top",$win + $scroll*0.4+"px");
+      $('.layer5').css("top",-100 - $scroll*0.1+"px");
+      $('.layer6').css("top",0 - $scroll*0.2+"px");
+      $('.layer7').css("top",100 - $scroll*0.3+"px");
+      $('.layer8').css("top",150 - $scroll*0.4+"px");
+      $(window).scroll(function(){
+        $scroll = $(document).scrollTop();
+        $('.layer1').css("top",$win*1.5 - $scroll*0.1+"px");
+        $('.layer2').css("top",$win*1.25 + $scroll*0.2+"px");
+        $('.layer3').css("top",$win* + $scroll*0.3+"px");
+        $('.layer4').css("top",$win*0.9 + $scroll*0.4+"px");
+        $('.layer5').css("top",-100 - $scroll*0.5+"px");
+        $('.layer6').css("top",0 - $scroll+"px");
+        $('.layer7').css("top",100 - $scroll*1.5+"px");
+        $('.layer8').css("top",150 - $scroll*2+"px");
+      });
+    });
+>>>>>>> 9d6610e66e7ef3e66b5378d7f058cb39a0bbaf40
   </script>
 </html>
